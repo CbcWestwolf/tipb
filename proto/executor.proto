@@ -214,8 +214,7 @@ message Aggregation {
 	// If it is a stream aggregation.
 	optional bool streamed = 3 [(gogoproto.nullable) = false];
   // If it is a hash aggregation.
-  optional bool enable_limit = 7;
-  optional uint64 limit_count = 8;
+  optional uint64 limit_count = 7;
 	optional Executor child = 6;
 }
 
